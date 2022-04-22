@@ -1,6 +1,7 @@
 package application;
 
 import boardgame.Board;
+import chess.ChessMatch;
 
 public class program {
 
@@ -8,7 +9,10 @@ public class program {
 
 		Board board = new Board(8,8);
 		
+		ChessMatch chessMatch = new ChessMatch();
 		
+		UI.printBoard(chessMatch.getPieces());
+				
 	}
 
 }
